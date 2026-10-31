@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1e4d3a" />
+    <title>Duckworks</title>
+    <meta
+      name="description"
+      content="Field sidekick for HVAC techs. Morning dispatch, duct layouts from a walkthrough, and straight answers on equipment and SOPs."
+    />
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <div class="stripe" aria-hidden="true"></div>
+    <header class="top">
+      <div class="brand">
+        <svg class="mark" viewBox="0 0 64 40" aria-hidden="true">
+          <path
+            fill="currentColor"
+            d="M6 24c7 7 18 9 30 4 2-1 6-2 8-2 1 4-2 8-8 10C22 40 8 34 4 24 2 18 6 12 12 10c1 5 0 10-6 14z"
+          />
+          <circle cx="44" cy="14" r="7" fill="currentColor" />
+          <path fill="#f0b429" d="M49 13h13l-5 4H49z" />
+        </svg>
+        <div>
+          <p class="eyebrow">HVAC field sidekick</p>
+          <h1>Duckworks</h1>
+        </div>
+      </div>
+      <nav class="tabs" aria-label="Sections">
+        <button type="button" data-tab="morning" aria-selected="true">Morning</button>
+        <button type="button" data-tab="plan" aria-selected="false">Plan</button>
+        <button type="button" data-tab="answers" aria-selected="false">Answers</button>
+      </nav>
+    </header>
+    <main>
+      <section id="panel-morning" aria-label="Morning board"></section>
+      <section id="panel-plan" aria-label="Duct plan" hidden></section>
+      <section id="panel-answers" aria-label="Equipment and SOPs" hidden></section>
+    </main>
+    <footer class="foot">
+      <p>
+        Notes for licensed techs. The nameplate, the manufacturer’s instructions, and local code win.
+        Duckworks reads the dispatch you paste or drop. It does not sign in to your email.
+      </p>
+    </footer>
+    <noscript>Duckworks needs JavaScript for the board, the plan, and the notes.</noscript>
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>

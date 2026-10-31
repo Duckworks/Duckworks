@@ -1,0 +1,10 @@
+{
+  "name": "duckworks",
+  "private": true,
+  "type": "module",
+  "description": "Field sidekick for HVAC techs: morning dispatch, duct layouts, and straight answers.",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  }
+}
