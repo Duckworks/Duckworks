@@ -1,0 +1,21 @@
+{
+  "name": "duckworks",
+  "private": true,
+  "type": "module",
+  "description": "HVAC field sidekick: morning job brief, floor-plan sketches, equipment and SOP answers.",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "tsx --test bot/lib/layout.test.ts",
+    "dev": "npx @grok/agent-sdk dev",
+    "validate": "npx @grok/agent-sdk validate --dir ."
+  },
+  "dependencies": {
+    "@grok/agent-sdk": "^0.5.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3"
+  }
+}
